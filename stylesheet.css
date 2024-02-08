@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+img {
+    max-width: 100%;
+}
+
+body {
+    background-color: #F3F4EF;
+    min-height: 1rem;
+    display: grid;
+    grid-template-rows: auto auto 70px; /* Changed the grid-template-rows to auto for header and nav */
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+header {
+    margin: 10px 0;
+}
+
+.language-selector {
+    display: flex;
+    padding-right: 16px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; /* Added padding for nav */
+    background-color: #779882; /* Added background color */
+}
+
+.logo, .menu-icon {
+    width: 40px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer; /* Add cursor pointer */
+}
